@@ -1,0 +1,13 @@
+[Unit]
+Description=Attach loop device for /data
+DefaultDependencies=no
+After=systemd-remount-fs.service
+Before=local-fs-pre.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/losetup -f /var/disks/data.img
+
+[Install]
+WantedBy=local-fs-pre.target

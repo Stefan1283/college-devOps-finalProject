@@ -1,0 +1,8 @@
+[Unit]
+Description=Append a heartbeat to /data/heartbeat.log
+RequiresMountsFor=/data
+
+[Service]
+Type=oneshot
+User=arthur
+ExecStart=/usr/local/bin/heartbeat.sh

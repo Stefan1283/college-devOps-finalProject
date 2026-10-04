@@ -1,0 +1,27 @@
+=== [pipe: du | sort | head] 10 largest items in /var/log ===
+37M	/var/log
+33M	/var/log/journal/fdf8c349f23e4c9d8ef559bc179c5d15
+33M	/var/log/journal
+17M	/var/log/journal/fdf8c349f23e4c9d8ef559bc179c5d15/system.journal
+8.1M	/var/log/journal/fdf8c349f23e4c9d8ef559bc179c5d15/user-1001.journal
+8.1M	/var/log/journal/fdf8c349f23e4c9d8ef559bc179c5d15/user-1000.journal
+1.3M	/var/log/syslog
+1.2M	/var/log/installer
+1020K	/var/log/dpkg.log
+732K	/var/log/installer/installer-journal.txt
+
+=== [pipe: dpkg | grep -c] installed packages ===
+1500
+
+=== [pipe: grep | cut] users with login shells ===
+root
+sync
+vboxuser
+arthur
+
+=== [glob: /etc/*.conf | wc] config files directly in /etc ===
+33
+
+=== [pipe: systemctl | wc] failed systemd units ===
+1
+=== [redirect >>] generated 2026-10-04T00:03:39+00:00 ===

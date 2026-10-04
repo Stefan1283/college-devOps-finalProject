@@ -1,0 +1,4 @@
+PS1 definition:
+\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[33m\]$(__git_branch)\[\e[0m\]\$ 
+
+Rendered: arthur@linuxUbuntuProject:/home/arthur/my-linux-final$

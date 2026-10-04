@@ -1,0 +1,8 @@
+# --- my customisations ---
+export PATH="$HOME/bin:$PATH"
+alias ll='ls -lah'
+alias gs='git status -sb'
+alias ..='cd ..'
+alias ports='ss -tulpn'
+__git_branch() { git branch --show-current 2>/dev/null | sed 's/.*/ (&)/'; }
+PS1='\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[33m\]$(__git_branch)\[\e[0m\]\$ '
